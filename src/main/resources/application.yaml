@@ -1,0 +1,8 @@
+feign:
+  client:
+    url.ccb: https://api.virapi.com/vir_github256gbaa2a8b48/demo
+    config:
+      default:
+        loggerLevel: FULL
+        connectTimeout: 3300
+        readTimeout: 4400
