@@ -1,7 +1,7 @@
 package com.zxin.java.spring.cloud.feign.api;
 
 import com.zxin.java.core.Result;
-import com.zxin.java.spring.cloud.feign.CcbFeignConfiguration;
+import feign.Request;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,5 +20,8 @@ public interface IcbcPayFeignApi {
      */
     @PostMapping("/interlink")
     Result<String> interlink(@RequestBody @Valid String xml);
+
+    @PostMapping("/interlink")
+    Result<String> interlink1(@RequestBody @Valid String xml, Request.Options options);
 
 }
