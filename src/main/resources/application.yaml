@@ -6,3 +6,6 @@ feign:
         loggerLevel: FULL
         connectTimeout: 3300
         readTimeout: 4400
+      ccb-pay:
+        connectTimeout: 100
+        readTimeout: 1000
