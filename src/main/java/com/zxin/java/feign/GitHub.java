@@ -2,6 +2,7 @@ package com.zxin.java.feign;
 
 import feign.Param;
 import feign.RequestLine;
+import lombok.Data;
 
 import java.util.List;
 
@@ -14,12 +15,14 @@ interface GitHub {
   void createIssue(Issue issue, @Param("owner") String owner, @Param("repo") String repo);
 
 
-  public static class Contributor {
+  @Data
+  class Contributor {
     String login;
     int contributions;
   }
 
-  public static class Issue {
+  @Data
+  class Issue {
     String title;
     String body;
     List<String> assignees;

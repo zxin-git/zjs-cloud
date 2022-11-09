@@ -9,3 +9,4 @@ feign:
       ccb-pay:
         connectTimeout: 100
         readTimeout: 1000
+logging.level.com.zxin.javaspring.cloud.feign.es.CatFeignClient: debug
